@@ -1,0 +1,46 @@
+.section-header--heading {
+  margin-bottom: 50px;
+}
+
+.work {
+  padding-top: 0px;
+}
+
+.areas-works-list {
+  display: flex;
+
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.areas-works-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.areas-works-list__wrapper {
+  position: absolute;
+
+  width: 100%;
+  min-height: 70px;
+  bottom: 0;
+
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.areas-works-list__item {
+  position: relative;
+}
+
+.areas-works-list__text {
+  font-weight: bold;
+  line-height: 1.14;
+  text-align: center;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  margin: auto;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $white-font;
+}

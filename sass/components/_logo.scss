@@ -1,0 +1,23 @@
+.logo-konstant {
+  color: $brand-color;
+}
+.logo-header {
+  color: $logo-black;
+}
+.logo-footer {
+  color: $white-font;
+}
+.logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+}
+.whole-logo {
+  margin-right: 90px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
