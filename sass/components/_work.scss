@@ -1,9 +1,14 @@
 .section-header--heading {
   margin-bottom: 50px;
+  text-align: center;
 }
 
 .work {
   padding-top: 0px;
+
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
 }
 
 .areas-works-list {
