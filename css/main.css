@@ -184,25 +184,21 @@ body {
   fill: currentColor;
 }
 
-.hero {
-  background-color: #2f303a;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  text-align: center;
-}
-
 .hero-wrapper__title {
-  color: #ffffff;
-  margin-left: auto;
-  margin-right: auto;
   text-transform: uppercase;
-  width: 696px;
-  font-size: 44px;
-  line-height: 1.36;
+  color: #ffffff;
   text-align: center;
   letter-spacing: 0.06em;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-wrapper__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero-wrapper__button {
@@ -219,17 +215,65 @@ body {
   line-height: 1.87;
   text-align: center;
   letter-spacing: 0.06em;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
 }
 
 .hero--overlay {
-  height: 600px;
-  max-width: 1600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/background.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  text-align: center;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-bcg-mob-1x.jpg);
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero--overlay .hero--overlay {
+    background-image: url(../img/hero-bcg-mob-2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero--overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-bcg-tab-1x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero--overlay .hero--overlay {
+    background-image: url(../img/hero-bcg-tab-2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero--overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-bcg-desk-1x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero--overlay .hero--overlay {
+    background-image: url(../img/hero-bcg-desk-2x.jpg);
+  }
+}
+
+.hero-wrapper {
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-wrapper {
+    padding-left: auto;
+    padding-right: auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .benefits-list__heading {
