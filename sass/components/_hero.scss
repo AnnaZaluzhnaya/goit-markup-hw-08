@@ -1,22 +1,18 @@
 .hero {
-  background-color: $hero-background-color;
-
+  background-color: #2f303a;
   padding-left: 0;
   padding-right: 0;
   padding-top: 200px;
   padding-bottom: 200px;
-
   text-align: center;
 }
 
 .hero-wrapper__title {
-  color: $white-font;
-
+  color: #ffffff;
   margin-left: auto;
   margin-right: auto;
   text-transform: uppercase;
   width: 696px;
-
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
@@ -28,14 +24,11 @@
   border: 1px solid transparent;
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-  background-color: $brand-color;
-  color: $white-font;
-
+  background-color: #2196f3;
+  color: #ffffff;
   margin-top: 30px;
   padding: 10px 32px;
   align-items: center;
-
   font-size: 16px;
   line-height: 1.87;
   text-align: center;
