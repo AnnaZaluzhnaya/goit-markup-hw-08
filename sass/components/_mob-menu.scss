@@ -1,0 +1,30 @@
+.mob-menu-btn-open {
+  margin-left: auto;
+  border: transparent;
+  background-color: transparent;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-btn-close {
+  padding: 11px;
+  border: transparent;
+  background-color: transparent;
+  display: block;
+  margin-left: auto;
+}
+
+.mob-menu {
+  background-color: $white-font;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+}
+
+.menu-networks {
+  display: flex;
+}
