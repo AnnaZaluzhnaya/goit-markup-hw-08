@@ -3,20 +3,32 @@
   margin-top: $portfolio-card-gap;
 
   transition: box-shadow $transition-duration $timing-function;
+  // width: 450px;
+  // height: 404px;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 3 - 30px);
+  }
 }
 
 .card-set {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: -30px;
 }
 
-.card-set__item:nth-child(3n + 1) {
-  margin-left: 0px;
-}
+// .card-set__item:nth-child(3n + 1) {
+//   margin-left: 0px;
+// }
 
-.card-set__item:nth-child(-n + 3) {
-  margin-top: 0px;
-}
+// .card-set__item:nth-child(-n + 3) {
+//   margin-top: 0px;
+// }
 
 .card-set__item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
