@@ -128,8 +128,28 @@ body {
   align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .nav {
+    margin: auto;
+  }
+}
+
 .connect {
   margin-left: auto;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .connect {
+    display: block;
+    margin-left: 84px;
+    margin-top: 21px;
+  }
 }
 
 .header-navigation {
@@ -151,8 +171,20 @@ body {
   color: #2196f3;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .nav__link {
+    margin-bottom: 10px;
+  }
+}
+
 .nav__list:not(:last-child) {
   margin-right: 53px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .nav__list:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .nav__link--active {
@@ -179,9 +211,28 @@ body {
   color: #2196f3;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .nav__link--contact {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+  }
+}
+
 .nav__icon {
   margin-right: 10px;
   fill: currentColor;
+}
+
+.nav-list {
+  display: flex;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .nav-list {
+    margin-bottom: 10px;
+  }
 }
 
 .hero-wrapper__title {
@@ -752,6 +803,17 @@ body {
   fill: #ffffff;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-box {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.footer-container {
+  margin-right: 70px;
+}
+
 .joing-text {
   color: #ffffff;
   text-transform: uppercase;
@@ -764,6 +826,12 @@ body {
   margin-top: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    display: flex;
+  }
+}
+
 .subscription-text {
   color: #ffffff;
   margin-bottom: 20px;
@@ -772,6 +840,13 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-top: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .subscription-text {
+    text-align: left;
+    margin-left: 93px;
+  }
 }
 
 .footer-form__input {
@@ -787,6 +862,20 @@ body {
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form__input {
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-right: 12px;
+    margin-left: 93px;
+    display: flex;
+    align-items: center;
+  }
 }
 
 .wrapper-btn__button {

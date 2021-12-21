@@ -1,6 +1,8 @@
-// .footer-form {
-//   display: flex;
-// }
+.footer-form {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
 
 .subscription-text {
   color: $white-font;
@@ -10,20 +12,27 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  // text-align: left;
-  // margin-left: 93px;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    margin-left: 93px;
+  }
 
   margin-top: 30px;
 }
 
 .footer-form__input {
-  // width: 358px;
-  // height: 50px;
-  // padding-left: 16px;
-  // padding-top: 15px;
-  // padding-bottom: 15px;
-  // margin-right: 12px;
-  // margin-left: 93px;
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-right: 12px;
+    margin-left: 93px;
+
+    display: flex;
+    align-items: center;
+  }
 
   font-size: 16px;
   line-height: 1.25;
@@ -32,9 +41,6 @@
   width: 450px;
   height: 50px;
   margin-bottom: 20px;
-
-  // display: flex;
-  // align-items: center;
 
   color: rgba(255, 255, 255, 0.6);
   background: $footer-background-color;

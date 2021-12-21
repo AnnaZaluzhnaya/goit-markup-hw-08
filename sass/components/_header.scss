@@ -11,10 +11,24 @@
 .nav {
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    margin: auto;
+  }
 }
 
 .connect {
   margin-left: auto;
+
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    display: block;
+    margin-left: 84px;
+    margin-top: 21px;
+  }
 }
 
 .header-navigation {
@@ -37,10 +51,18 @@
   &:focus {
     color: $brand-color;
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    margin-bottom: 10px;
+  }
 }
 
 .nav__list:not(:last-child) {
   margin-right: 53px;
+
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    margin-right: 50px;
+  }
 }
 
 .nav__link--active {
@@ -67,9 +89,24 @@
   &:hover {
     color: $brand-color;
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+  }
 }
 
 .nav__icon {
   margin-right: 10px;
   fill: currentColor;
+}
+
+.nav-list {
+  display: flex;
+
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    margin-bottom: 10px;
+  }
 }
