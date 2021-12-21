@@ -656,11 +656,17 @@ body {
 }
 
 .buttons-row {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .buttons-row {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
 
 .buttons-row__item:not(:last-child) {
@@ -759,10 +765,6 @@ body {
   z-index: 1;
 }
 
-.footer-container {
-  text-align: center;
-}
-
 .joing {
   text-align: center;
 }
@@ -810,6 +812,15 @@ body {
   fill: #ffffff;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-box {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer-box {
     display: flex;
@@ -818,7 +829,19 @@ body {
 }
 
 .footer-container {
-  margin-right: 70px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-container {
+    margin-right: 165px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    margin-right: 70px;
+  }
 }
 
 .joing-text {
@@ -831,6 +854,18 @@ body {
   font-style: normal;
   font-weight: bold;
   margin-top: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .joing-text {
+    margin-top: 65px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .joing-text {
+    margin-top: 30px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -863,6 +898,7 @@ body {
   width: 450px;
   height: 50px;
   margin-bottom: 20px;
+  padding-left: 16px;
   color: rgba(255, 255, 255, 0.6);
   background: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);

@@ -27,11 +27,14 @@
 }
 
 .buttons-row {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
 
 .buttons-row__item:not(:last-child) {
