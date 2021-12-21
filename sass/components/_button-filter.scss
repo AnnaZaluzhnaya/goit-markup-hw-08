@@ -37,3 +37,7 @@
 .buttons-row__item:not(:last-child) {
   margin-right: 8px;
 }
+
+.buttons-row__item {
+  display: flex;
+}

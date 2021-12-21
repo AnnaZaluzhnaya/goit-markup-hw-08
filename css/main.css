@@ -616,6 +616,10 @@ body {
   margin-right: 8px;
 }
 
+.buttons-row__item {
+  display: flex;
+}
+
 .card-set > .card-set__item {
   margin-left: 30px;
   margin-top: 30px;
@@ -698,7 +702,11 @@ body {
 }
 
 .footer-container {
-  text-align: left;
+  text-align: center;
+}
+
+.joing {
+  text-align: center;
 }
 
 .footer-list {
@@ -744,15 +752,6 @@ body {
   fill: #ffffff;
 }
 
-.footer-box {
-  display: flex;
-  align-items: baseline;
-}
-
-.footer-container {
-  margin-right: 70px;
-}
-
 .joing-text {
   color: #ffffff;
   text-transform: uppercase;
@@ -762,10 +761,7 @@ body {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-}
-
-.footer-form {
-  display: flex;
+  margin-top: 60px;
 }
 
 .subscription-text {
@@ -775,23 +771,16 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  text-align: left;
-  margin-left: 93px;
+  margin-top: 30px;
 }
 
 .footer-form__input {
-  width: 358px;
-  height: 50px;
-  padding-left: 16px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin-right: 12px;
-  margin-left: 93px;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  display: flex;
-  align-items: center;
+  width: 450px;
+  height: 50px;
+  margin-bottom: 20px;
   color: rgba(255, 255, 255, 0.6);
   background: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -827,6 +816,10 @@ body {
   left: 148px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.subscription-field {
+  text-align: center;
 }
 
 .backdrop {

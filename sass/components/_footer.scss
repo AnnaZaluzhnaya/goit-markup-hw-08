@@ -1,5 +1,10 @@
 .footer-container {
-  text-align: left;
+  // text-align: left;
+  text-align: center;
+}
+
+.joing {
+  text-align: center;
 }
 
 .footer-list {
@@ -45,14 +50,14 @@
   fill: $white-font;
 }
 
-.footer-box {
-  display: flex;
-  align-items: baseline;
-}
+// .footer-box {
+//   display: flex;
+//   align-items: baseline;
+// }
 
-.footer-container {
-  margin-right: 70px;
-}
+// .footer-container {
+//   margin-right: 70px;
+// }
 
 .joing-text {
   color: $white-font;
@@ -63,4 +68,6 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
+
+  margin-top: 60px;
 }
