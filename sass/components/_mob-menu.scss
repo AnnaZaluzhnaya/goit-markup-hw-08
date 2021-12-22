@@ -28,7 +28,7 @@
   height: 100vh;
   z-index: 10;
 
-  transform: translateX(100%);
+  transform: translateX(1000%);
   .menu-container {
     height: 100%;
     display: flex;
@@ -114,4 +114,16 @@
   padding-left: 40px;
   padding-right: 40px;
   margin: 0 auto;
+}
+
+.menu-networks__list::after {
+  content: "";
+
+  width: 22px;
+  height: 0px;
+  left: 315px;
+  top: 726px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
 }
