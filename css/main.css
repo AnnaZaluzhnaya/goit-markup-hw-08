@@ -1302,7 +1302,7 @@ body {
   margin: 0 auto;
 }
 
-.menu-networks__list::after {
+.menu-networks__list:not(:last-child)::after {
   content: "";
   width: 22px;
   height: 0px;
