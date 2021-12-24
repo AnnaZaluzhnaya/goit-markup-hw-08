@@ -14,10 +14,10 @@
 
   @media screen and (min-width: 1200px) {
     text-align: left;
-    margin-left: 93px;
+    // margin-left: 93px;
   }
 
-  margin-top: 30px;
+  // margin-top: 30px;
 }
 
 .footer-form__input {
@@ -45,7 +45,7 @@
     padding-top: 15px;
     padding-bottom: 15px;
     margin-right: 12px;
-    margin-left: 93px;
+    // margin-left: 93px;
 
     display: flex;
     align-items: center;
@@ -87,4 +87,8 @@
 
 .subscription-field {
   text-align: center;
+
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    margin-top: 60px;
+  }
 }

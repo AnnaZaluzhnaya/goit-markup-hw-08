@@ -51,6 +51,12 @@
 //   margin-right: 30px;
 // }
 
+.people-list__item:not(:last-child) {
+  @media screen and (max-width: 767.5px) {
+    margin-bottom: 30px;
+  }
+}
+
 .people-list__img {
   display: block;
   max-width: 100%;
@@ -67,7 +73,7 @@
 }
 
 .content {
-  padding-top: 30px;
+  padding: 30px 32px 24px 32px;
   text-align: center;
 }
 
@@ -87,12 +93,13 @@
 
   letter-spacing: 0.03em;
   margin-top: 10px;
+  margin-bottom: 16px;
 }
 
 .networks-list__item {
   width: 44px;
   height: 44px;
-  margin-bottom: 24px;
+  // margin-bottom: 24px;
 }
 
 .networks-list__item + .networks-list__item {
@@ -118,8 +125,8 @@
 .networks-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
-  margin-top: 16px;
+  // margin-bottom: 30px;
+  // margin-top: 16px;
 }
 
 .networks-list__icon {

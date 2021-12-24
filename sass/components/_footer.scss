@@ -1,9 +1,27 @@
 .joing {
-  text-align: center;
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+    text-align: left;
+  }
+
+  @media screen and (max-width: 1199.5px) {
+    // margin-right: 93px;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 60px;
+  }
 }
 
 .footer-list {
-  margin-top: 20px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .basement {
@@ -26,12 +44,17 @@
 }
 
 .footer-list__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
 
 .footer-list__link--decoration {
   color: $footer-tel-mail;
   text-decoration: none;
+  font-style: normal;
 }
 
 .networks-list__link--footer-link {
@@ -50,7 +73,7 @@
     display: flex;
     align-items: baseline;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -60,31 +83,39 @@
 
 .footer-container {
   text-align: center;
-  @media screen and (min-width: 768px) {
-    margin-right: 165px;
+
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    margin-bottom: 60px;
   }
+
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
+    flex-grow: 1;
   }
 }
 
 .joing-text {
   color: $white-font;
   text-transform: uppercase;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  font-family: Roboto;
-  font-style: normal;
   font-weight: bold;
+  margin-bottom: 20px;
 
-  margin-top: 60px;
+  // margin-top: 60px;
 
-  @media screen and (min-width: 768px) {
-    margin-top: 65px;
-  }
+  // @media screen and (min-width: 768px) {
+  //   margin-top: 65px;
+  // }
+}
+
+.logo-footer {
+  color: $white-font;
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
 
   @media screen and (min-width: 1200px) {
-    margin-top: 30px;
+    text-align: left;
   }
 }

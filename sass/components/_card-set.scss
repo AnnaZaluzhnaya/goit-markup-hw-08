@@ -1,14 +1,12 @@
 .card-set > .card-set__item {
-  margin-left: $portfolio-card-gap;
-  margin-top: $portfolio-card-gap;
+  margin-bottom: 30px;
 
   transition: box-shadow $transition-duration $timing-function;
   // width: 450px;
   // height: 404px;
   @media screen and (min-width: 768px) {
     flex-basis: calc(100% / 2 - 30px);
-    margin-left: 30px;
-    margin-bottom: 30px;
+    margin: 15px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -19,7 +17,7 @@
 .card-set {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: -30px;
+  margin-bottom: -15px;
 }
 
 // .card-set__item:nth-child(3n + 1) {
