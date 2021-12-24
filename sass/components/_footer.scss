@@ -11,6 +11,7 @@
 
   @media screen and (max-width: 768px) {
     margin-bottom: 60px;
+    margin-top: 60px;
   }
 }
 
@@ -84,9 +85,9 @@
 .footer-container {
   text-align: center;
 
-  @media screen and (min-width: 480px) and (max-width: 768px) {
-    margin-bottom: 60px;
-  }
+  // @media screen and (min-width: 480px) and (max-width: 768px) {
+  //   margin-bottom: 60px;
+  // }
 
   @media screen and (min-width: 1200px) {
     margin-right: 70px;

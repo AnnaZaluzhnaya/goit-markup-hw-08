@@ -22,12 +22,13 @@
   @media screen and (min-width: 768px) {
     display: block;
     margin-left: 84px;
-    text-align: center;
+    margin-top: auto;
   }
 
   @media screen and (min-width: 1200px) {
     display: flex;
     margin-left: auto;
+    margin-top: 0;
   }
 }
 
