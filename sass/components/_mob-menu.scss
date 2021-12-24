@@ -72,6 +72,11 @@
 
   color: $brand-color;
   text-decoration: none;
+
+  @media screen and (min-width: 320px) and (max-width: 479px) {
+    font-size: 24px;
+    line-height: 1.15;
+  }
 }
 
 .menu-navigation__link--decoration {
@@ -82,6 +87,11 @@
 
   color: #212121;
   text-decoration: none;
+
+  @media screen and (min-width: 320px) and (max-width: 479px) {
+    font-size: 30px;
+    line-height: 1.15;
+  }
 }
 
 .menu-navigation__link--active {
@@ -106,6 +116,11 @@
 
   color: $brand-color;
   text-decoration: none;
+
+  @media screen and (min-width: 320px) and (max-width: 479px) {
+    font-size: 10px;
+    line-height: 1.15;
+  }
 }
 
 .menu-networks__list {
